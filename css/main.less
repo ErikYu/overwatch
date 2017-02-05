@@ -1,0 +1,245 @@
+@nav1-height: 44px;
+@nav1-font: 16px;
+//字体导入
+@font-face {
+  font-family: "big noodle too";
+  src: url("../fonts/big-noodle-too.woff");
+  font-weight: normal;
+  font-style: normal;
+}
+*{
+  margin:0;
+  padding:0;
+  font-family: "Microsoft YaHei";
+}
+a{
+  text-decoration: none;
+  color: #ffffff;
+}
+ul{
+  list-style: none;
+}
+// xiangyingshi
+// 先偷下懒
+body{
+  min-width: 768px;
+}
+section{
+  position: relative;
+  transform: translateY(-127px);
+}
+@media all and (min-width: 1300px) {
+  div.nav-2-left-mobile{
+    display: none;
+  }
+}
+@media all and (max-width: 1300px) {
+  div.nav-2-left-bar{
+    display: none;
+  }
+}
+
+
+header{
+  position: fixed;
+  z-index: 999;
+  width:100%;
+  nav.nav-1{
+    width:100%;
+    height:@nav1-height;
+    background-color: rgba(2,25,72,.3);
+    ul{
+      li{
+        display: inline-block;
+        font-size: @nav1-font;
+        float: left;
+        height:@nav1-height;
+        width:80px;
+        box-sizing: border-box;
+        color: #e6e9ef;
+        line-height: @nav1-height;
+        a{
+          color: #e6e9ef;
+        }
+      }
+      li:hover>a{
+        color: #ffffff;
+        transition: color ease-in-out 0.3s;
+      }
+      #logo{
+        background: url("../img/logo.png") no-repeat;
+        background-size: 50px auto;
+      }
+    }
+    ul.nav-1-left{
+      float: left;
+    }
+    ul.nav-1-right{
+      float: right;
+    }
+  }
+  nav.nav-2{
+    height: 63px;
+    background-color: rgba(40,53,79,.9);
+    margin: 20px 20px 0px 20px;
+    div.nav-2-left{
+      float: left;
+      height:inherit;
+      >div{
+        height:inherit;
+        float: left;
+      }
+      div.nav-2-left-mobile{
+        width: 100px;
+        padding-top: 20px;
+        padding-left: 20px;
+        box-sizing: border-box;
+        span{
+          display: block;
+          width:32px;
+          height:5px;
+          background-color: #f7931e;
+          margin-bottom: 5px;
+        }
+      }
+      div.nav-2-left-mobile:hover,div.nav-2-left-bar>ul>li:hover{
+        background-color: rgba(40,53,79,.5);
+        transition: background-color ease-in-out 0.4s;
+      }
+      div.nav-2-left-overwatch{
+        width:210px;
+        background: url("../img/nav-logo.png") no-repeat;
+        background-size: cover;
+      }
+      div.nav-2-left-bar{
+        height:inherit;
+        ul{
+          height:inherit;
+          li{
+            height:inherit;
+            width:105px;
+            display: inline-block;
+            text-align: center;
+            a{
+              width:inherit;
+              line-height: 63px;
+              display: inline-block;
+              height:inherit;
+            }
+          }
+        }
+      }
+    }
+    div.nav-2-right{
+      float: right;
+      height: inherit;
+      width:100px;
+      background-color: #f7931e;
+      a{
+        display: inline-block;
+        width:inherit;
+        height:inherit;
+        font-size: 16px;
+        font-weight: 700;
+        color: #e6e9ef;
+        line-height: 63px;
+        text-align: center;
+      }
+    }
+    div.nav-2-right:hover{
+      background-color: #f89e35;
+    }
+  }
+  nav.hidden{
+    margin: 0px;
+  }
+}
+header.hidden{
+  margin-top: -44px;
+}
+header,header.hidden,header>nav,header>nav.hidden{
+  transition: all 0.3s ease-in-out;
+}
+section.intro{
+  height:1040px;
+  z-index: 1;
+  video{
+    height:100%;
+  }
+  div.intro-ad{
+    width: 45vw;
+    text-align: center;
+    transform: translateY(-600px);
+    h3{
+      color: #f7931e;
+      font-family: "big noodle too", "Microsoft YaHei";
+      font-size: 24px;
+      font-weight: 600;
+      letter-spacing: 6px;
+    }
+    a{
+      display: inline-block;
+      width:217px;
+      height:58px;
+      background-color: #f89e35;
+      line-height: 58px;
+      font-size: 40px;
+      font-weight: bold;
+      margin-top: 30px;
+    }
+  }
+}
+section.purchase{
+  height: 56px;
+  z-index: 999;
+  div.purchase-container{
+    margin:0 auto;
+    width:80%;
+    height:inherit;
+    div{
+      background-color: #f89e35;
+      >div{
+        height: inherit;
+        font-size: 30px;
+        span{
+          line-height: 56px;
+          color: #ffffff;
+        }
+      }
+    }
+    div.purchase-intro{
+      height:inherit;
+      width:337px;
+      padding-left:10px;
+      float: left;
+      video{
+        width:150px;
+        display: inline-block;
+        line-height: 56px;
+        margin-top: -12px;
+      }
+      div{
+        float: right;
+        margin-right: 10px;
+      }
+    }
+    div.purchase-address{
+      float: right;
+      width: 320px;
+      height:inherit;
+      padding-left: 10px;
+      div{
+        float: left;
+      }
+      img{
+        display: inline-block;
+        margin-top: -50px;
+      }
+    }
+  }
+}
+section.news{
+  div.news-container{
+    width:80%;
+  }
+}
