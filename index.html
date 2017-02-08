@@ -5,7 +5,7 @@
     <title>Overwatch</title>
     <link rel="stylesheet/less" type="text/css" href="css/main.less">
 </head>
-<body>
+<body id="header">
 
 <header>
     <nav class="nav-1">
@@ -69,13 +69,193 @@
     </div>
 </section>
 <section class="news">
-    <div class="news-container">
-        <h3>新闻公告</h3>
-        <div>
-
+    <div class="news-container clearfix">
+        <h2><i>新闻公告</i></h2>
+        <div class="news-container-inner" id="news-container-inner-1">
+            <a></a>
+            <div class="news-container-inner-discription">
+                <h3><i>温斯顿的西游记</i></h3>
+            </div>
+        </div>
+        <div class="news-container-inner" id="news-container-inner-2">
+            <a></a>
+            <div class="news-container-inner-discription">
+                <h3><i>金鸡迎春，喜迎新年</i></h3>
+            </div>
+        </div>
+    </div>
+    <div class="news-all">
+        <a href="#">查看所有新闻</a>
+    </div>
+</section>
+<section class="discription">
+    <div class="discription-container">
+        <h2><i>为未来而战</i></h2>
+        <p>军人、科学家、冒险家、奇人异士。</p>
+        <p>在人类陷入空前危机之时，来自全球各个国家的特种精英们，为了结束战争、重铸秩序而团结在了一起。他们，就是 守望先锋。</p>
+        <p>英雄们最终结束了这场危机，人类文明在随后的数十年内和平共存并迎来了一个探索、革新和发现的新时代。尽管如此，守望先锋在多年后逐渐被人们所遗忘，最终难逃被解散的命运。</p>
+        <p>如今，世界各地争端再起，人们都翘首期待着新英雄的出现，或旧英雄的归来。</p>
+        <p>你愿意与我们共同抗争吗？</p>
+        <a class="discription-container-button" href="#">探索游戏</a>
+    </div>
+</section>
+<section class="heroes">
+    <div class="heroes-container">
+        <div class="heroes-container-discription">
+            <h2><i>各具特色的英雄</i></h2>
+            <p>不论喜欢哪种游戏方式，你总能找到适合自己玩法的英雄。</p>
+            <p>掌握他们独特的技能玩法，享受《守望先锋》的无穷乐趣！</p>
+        </div>
+        <div class="heroes-container-show clearfix">
+            <div class="heroes-container-show-list">
+                <ul>
+                    <li data-img="body-genji" title="一名致命的半机械忍者，通过他的机械躯体寻得了身心的和谐。" discription="源氏">
+                        <div class="heroes-container-show-list-item-head">
+                            <div class="head-icon" id="head-icon-genji"></div>
+                        </div>
+                        <span>源氏</span>
+                    </li>
+                    <li data-img="body-micre" title="一名亡命天涯的神枪手，以自己的方式伸张正义。" discription="麦克雷">
+                        <div class="heroes-container-show-list-item-head">
+                            <div class="head-icon" id="head-icon-micre"></div>
+                        </div>
+                        <span>麦克雷</span>
+                    </li>
+                    <li data-img="body-fala" title="一名恪守岗位的战士，用实验性的“猛禽”作战服确保天空的安全。" discription="法老之鹰">
+                        <div class="heroes-container-show-list-item-head">
+                            <div class="head-icon" id="head-icon-fala"></div>
+                        </div>
+                        <span>法老之鹰</span>
+                    </li>
+                    <li data-img="body-reaper" title="一名无情的杀手，一直在追杀前守望先锋的特工们。" discription="死神">
+                        <div class="heroes-container-show-list-item-head">
+                            <div class="head-icon" id="head-icon-reaper"></div>
+                        </div>
+                        <span>死神</span>
+                    </li>
+                    <li  data-img="body-soldier" title="一名试图自己将守望先锋敌人绳之于法的独行侠。" discription="士兵：76">
+                        <div class="heroes-container-show-list-item-head">
+                            <div class="head-icon" id="head-icon-solider"></div>
+                        </div>
+                        <span>士兵：76</span>
+                    </li>
+                    <li  data-img="body-shadow" title="臭名昭著的黑客，沉迷于揭秘——及其带来的权力。" discription="黑影">
+                        <div class="heroes-container-show-list-item-head">
+                            <div class="head-icon" id="head-icon-shadow"></div>
+                        </div>
+                        <span>黑影</span>
+                    </li>
+                    <li  data-img="body-tracer" title="一名前守望先锋特工，同时也是可以穿梭时间的充满正义的冒险家。" discription="猎空">
+                        <div class="heroes-container-show-list-item-head">
+                            <div class="head-icon" id="head-icon-tracer"></div>
+                        </div>
+                        <span>猎空</span>
+                    </li>
+                    <li  data-img="body-portrait" title="一名可以切换形态的机器人，为自然着迷而探索世界，同时也对人类保持着戒心。" discription="堡垒">
+                        <div class="heroes-container-show-list-item-head">
+                            <div class="head-icon" id="head-icon-portrait"></div>
+                        </div>
+                        <span>源氏</span>
+                    </li>
+                    <li data-img="body-hanzo" title="一名强大而致命的弓箭大师"  discription="半藏">
+                        <div class="heroes-container-show-list-item-head">
+                            <div class="head-icon" id="head-icon-hanzo"></div>
+                        </div>
+                        <span>源氏</span>
+                    </li>
+                    <li data-img="body-junkrat" title="一名满脑子都是爆炸的变态疯子，只为了混乱和破坏而活。" discription="狂鼠">
+                        <div class="heroes-container-show-list-item-head">
+                            <div class="head-icon" id="head-icon-junkrat"></div>
+                        </div>
+                        <span>源氏</span>
+                    </li>
+                    <li data-img="body-reaper">
+                        <div class="heroes-container-show-list-item-head">
+                            <div class="head-icon" id="head-icon-reaper"></div>
+                        </div>
+                        <span>源氏</span>
+                    </li>
+                    <li data-img="body-reaper">
+                        <div class="heroes-container-show-list-item-head">
+                            <div class="head-icon" id="head-icon-reaper"></div>
+                        </div>
+                        <span>源氏</span>
+                    </li>
+                    <li data-img="body-reaper">
+                        <div class="heroes-container-show-list-item-head">
+                            <div class="head-icon" id="head-icon-reaper"></div>
+                        </div>
+                        <span>源氏</span>
+                    </li>
+                    <li data-img="body-reaper">
+                        <div class="heroes-container-show-list-item-head">
+                            <div class="head-icon" id="head-icon-reaper"></div>
+                        </div>
+                        <span>源氏</span>
+                    </li>
+                    <li data-img="body-reaper">
+                        <div class="heroes-container-show-list-item-head">
+                            <div class="head-icon" id="head-icon-reaper"></div>
+                        </div>
+                        <span>源氏</span>
+                    </li>
+                    <li data-img="body-reaper">
+                        <div class="heroes-container-show-list-item-head">
+                            <div class="head-icon" id="head-icon-reaper"></div>
+                        </div>
+                        <span>源氏</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="heroes-container-show-preview">
+                <h2><i>源氏</i></h2>
+                <div class="preview-icon"></div>
+                <p class="preview-text">一名致命的半机械忍者，通过他的机械躯体寻得了身心的和谐。</p>
+            </div>
         </div>
     </div>
 </section>
+<section class="buy">
+    <div class="buy-left"></div>
+    <div class="buy-right">
+        <div class="buy-right-container">
+            <h2><i>这个世界需要</i></h2>
+            <h2><i>英雄</i></h2>
+            <p><i>现在即是未来，你来吗？</i></p>
+            <a href="#">立刻购买</a>
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="footer-container clearfix">
+        <div class="footer-container-header">
+            <ul>
+                <li><a href="">在线客服</a></li>
+                <li><a href="">反馈</a></li>
+                <li><a href="">加入我们</a></li>
+            </ul>
+        </div>
+        <a href="#" class="logo blzlogo"></a>
+        <a href="#" class="logo nelogo"></a>
+        <div class="footer-container-rights">
+            <ul>
+                <li><a href="#">隐私</a></li>
+                <li><a href="#">API</a></li>
+                <li><a href="#">法律条款</a></li>
+            </ul>
+            <p>©2017 暴雪娱乐股份有限公司版权所有 由上海网之易网络科技发展有限公司运营 著作权侵权 新广出审[2016]378号</p>
+            <p>互联网违法和不良信息举报电话：0571-28090163 沪公网安备 31011502032167号</p>
+        </div>
+    </div>
+
+    <div class="footer-container-2">
+        <hr />
+        <p>积极健康的游戏心态是健康游戏的开端，本游戏故事情节设置紧凑，请您合理控制游戏时间，避免沉溺游戏影响生活，注意自我保护，防范网络陷阱。
+            健康游戏忠告：抵制不良游戏，拒绝盗版游戏。注意自我保护，谨防受骗上当。适度游戏益脑，沉迷游戏伤身。合理安排时间，享受健康生活。</p>
+    </div>
+</footer>
+<a id="gotoTop" href="#header">TOP</a>
+
 
 <script src="js/less.js"></script>
 <script src="js/jquery-3.1.0.js"></script>

@@ -2,4 +2,7 @@
 - HTML5 CSS3
 - 响应式设计
 - Less
-- Chrome Opera IE10
+- Chrome Opera FireFox
+### 注：
+- 响应式设计仅完成nav部分
+- section响应式设计待完成
